@@ -3,14 +3,14 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(names)
-  names.collect do |names|
+  names.collect do |name|
     badge_maker(name)
 end
 end
 
   def room_assignments(names)
     room = 0
-    names.collect do |names|
+    names.collect do |name|
       room +=1
       "Hello #{name}! You'll be assigned to room #{room}!"
   end
