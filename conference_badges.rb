@@ -16,10 +16,11 @@ end
   end
 end
 
-def printer(names)
-  badge_batch_creator(names).each do |value|
+def printer(speakers)
+  badge_batch_creator(speakers).each do |value|
     puts value
   end
-  assign_rooms(name).each do |value|
+  assign_rooms(speakers).each do |value|
+    puts value
   end
 end
